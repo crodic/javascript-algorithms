@@ -1,0 +1,6 @@
+{
+    "scripts": {
+        "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+        "lint:fix": "eslint --fix --ext js,jsx src/"
+    }
+}

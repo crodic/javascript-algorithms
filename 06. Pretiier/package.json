@@ -1,0 +1,6 @@
+{
+    "scripts": {
+        "prettier": "prettier --check \"src/**/(**.jsx|*.js|*.scss|*.css)\"",
+        "prettier:fix": "prettier --write \"src/**/(**.jsx|*.js|*.scss|*.css)\""
+    }
+}
