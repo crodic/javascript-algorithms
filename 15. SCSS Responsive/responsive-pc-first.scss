@@ -10,25 +10,24 @@
     }
 
     ---- flow code ----
-    Base css is prioritize. When screen better sm (738px) then sm responsive is effective 
-    min-width: screen > value
+    Base css is prioritize. When screen less sm (738px) then sm responsive is effective 
+    max-width: screen < value
 */
 
-
 @mixin sm {
-    @media (min-width: 738px) {
+    @media (max-width: 738px) {
         @content;
     }
 }
 
 @mixin md {
-    @media (min-width: 1024px) {
+    @media (max-width: 1024px) {
         @content;
     }
 }
 
 @mixin lg {
-    @media (min-width: 1366px) {
+    @media (max-width: 1366px) {
         @content;
     }
 }
