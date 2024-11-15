@@ -8,6 +8,9 @@ import { useEffect, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { z } from 'zod';
 
+// NOTE: https://react-hook-form.com/api/useform
+// IMPORTANT: https://github.com/react-hook-form/resolvers
+
 const DateScheme = z.object({
     date: z
         .object({
