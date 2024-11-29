@@ -9,7 +9,7 @@ interface IPagination {
     siblingCount?: number;
 }
 
-export default function usePagination({ count, page = 1, siblingCount = 1 }: IPaginate) {
+export default function usePagination({ count, page = 1, siblingCount = 1 }: IPagination) {
     function renderRangeNumber(start: number, end: number): number[] {
         const length = end - start + 1;
         return Array.from({ length }, (_, i) => start + i);

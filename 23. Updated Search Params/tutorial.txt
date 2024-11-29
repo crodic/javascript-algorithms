@@ -1,0 +1,27 @@
+Price Offer
+
+Các trường hợp:
+
+1. Giá trên 10k
+- mongoose: price[gt]=10000
+- value checkbox: >10000
+
+2. Giá từ 10k - dưới 50k (49k)
+- mongoose: price[gte]=10000&price[lt]=50000
+- value checkbox: 10000:<50000
+
+3. Giá trên 10k (11k) - dưới 50k (49k)
+- mongoose: price[gt]=10000&price[lt]=50000
+- value checkbox: >10000:<50000
+
+4. Giá từ 10k - 50k
+- mongoose: price[gte]=10000&price[lte]=50000
+- value checkbox: 10000:50000
+
+5. Giá trên 10k (11k) - 50k
+- mongoose: price[gt]=10000&price[lte]=50000
+- value checkbox: >10000:50000
+
+6. Giá dưới 10k
+- mongoose: price[gte]=0&price[lt]=10000
+- value checkbox: 0:<10000
